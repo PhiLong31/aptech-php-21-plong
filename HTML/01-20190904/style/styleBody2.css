@@ -1,0 +1,95 @@
+.body-2{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.body-2 input[type = "radio"]{
+    margin-bottom: 10vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.body-2 .slide-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+.body-2 .slide-background .background-1{
+    width: 100%;
+    height: 100%;
+    background: url('../Images/jobs_body.jpg');
+    background-size: cover;
+}
+
+.body-2 .slide-background .background-2{
+    width: 100%;
+    height: 100%;
+    background: url('../Images/swim.jpg');
+    background-size: cover;
+}
+.body-2 .slide-background .background-3{
+    width: 100%;
+    height: 100%;
+    background: url('../Images/teakwondo.jpg');
+    background-size: cover;
+}
+.body-2 .slider1:checked ~ .slide-background{
+    left: 0;
+}
+.body-2 .slider2:checked ~ .slide-background{
+    left: -100%;
+}
+.body-2 .slider3:checked ~ .slide-background{
+    left: -200%;
+}
+.body-2 .slide-background .text{
+    width: 40%;
+    height: auto;
+}
+.body-2 .slide-background .text h1{
+    width: 20%; 
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4vw;
+}
+.body-2 .slide-background .text h2{
+    color: #FFCF31;
+    letter-spacing: 1px;
+    font-size: 2vw;
+}
+.body-2 .slide-background .text p{
+    width: 27%;
+    color: #fff;
+    font-size: 1.5vw;
+}
+.body-2 .slide-background .text1{
+    position: absolute;
+    left: 10vw;
+    top: 8vw;
+}
+.body-2 .slide-background .text2{
+    position: absolute;
+    right: 18vw;
+    top: 27vw;
+}
+.body-2 .slide-background .text2 h2{
+    color:#FFCF31;
+    font-size: 3vw;
+}
+.body-2 .slide-background .text3{
+    position: absolute;
+    top: 18vw;
+    margin-left: 10vw;
+}

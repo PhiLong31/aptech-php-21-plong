@@ -1,0 +1,73 @@
+.body-1{
+    width: 100%;
+    height: 100vh;
+}
+.body-1 .main{
+    width: 100%;
+    height: 95%;
+    background: #FFCF31;    
+    border-bottom-right-radius: 50%;
+}
+.body-1 .main .head h1{
+    font-family: 'Great Vibes', cursive;
+    padding: 2vh;
+    margin: 0;
+}
+.body-1 .main .content{
+    display: flex;
+    margin: 8vh auto;
+    width: 60%;
+    justify-content: space-between;
+}
+.body-1 .main .content .left-content{
+    width: 30%;
+    height: auto;
+}
+.body-1 .main .content .left-content h2{
+    font-size: 4vw;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    color: #292831;
+    margin-bottom: 30px;
+}
+.body-1 .main .content .left-content h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    height: 5px;
+    background: white;
+}
+.body-1 .main .content .left-content p{
+    width: 100%;        
+    margin-bottom: 30px;
+    color: #292831;
+    font-size: 2vh;
+}
+.body-1 .main .content .left-content a{
+    text-decoration: none;
+    color: #fff;
+    background: #292831;
+    padding: 1vh 3vh;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1vw;
+}
+.body-1 .main .content .left-content a:hover{
+    padding: 1.5vh 3.5vh;
+}
+.body-1 .main .content .right-content{
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+    box-shadow: 0 2px 35px -4px rgba(0,0,0,.50);
+}
+.body-1 .main .content .right-content img{
+    width: 100%;
+    transition: 0.2s;
+}
