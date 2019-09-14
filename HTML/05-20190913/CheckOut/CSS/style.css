@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+header .img {
+  margin: 1.7rem 0;
+}
+
+header .img--setWidthHeight {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+header .p {
+  margin: 0;
+  padding: 0 5rem;
+}
+
+header .p--size {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.w-90 {
+  width: 95%;
+}
+
+.w-77 {
+  width: 77%;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+.box--sizing {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.short-border-left {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.short-border-right {
+  margin-right: -1px;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.btn {
+  font-size: 1.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn-fontsize {
+  font-size: 1rem;
+}
+
+.border-radius-20 {
+  border-radius: 20px;
+}
+
+.border-radius-4 {
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+
+$color-background: #f8f9fa;
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: $color-background;
+}
+
+@mixin setBorderRadius($positionX, $positionY, $value) {
+    border-#{$positionX}-#{$positionY}-radius: $value !important;
+}
+
+@mixin Weight-Height($width: 0, $height: 0) {
+    width: $width;
+    height: $height;
+}
+@mixin setFontSize($size: 10px) {
+    font-size: $size;
+}
+header{
+    .img{
+        margin: 1.7rem 0;
+        &--setWidthHeight{
+            @include Weight-Height(4.5rem ,4.5rem);
+        }
+    }
+    .p{
+        margin: 0;
+        padding: 0 5rem;
+        &--size{
+            font-weight: 300;
+            @include setFontSize(1.3em);
+        }
+    }
+}
+
+.w-90{
+    width: 95%;
+}
+.w-77{
+    width: 77%;
+}
+.row{
+    margin: 1rem 0;
+}
+.box{
+    &--sizing{
+        box-sizing: border-box;
+    }
+}
+
+.short-border-left{
+    @include setBorderRadius(top, left, 0);
+    @include setBorderRadius(bottom, left, 0);
+}
+.short-border-right{
+    margin-right: -1px;
+    @include setBorderRadius(top, right, 0);
+    @include setBorderRadius(bottom, right, 0);
+}
+.btn{
+    @include setFontSize(1.2rem);
+    box-sizing: border-box;
+    &-fontsize{
+        @include setFontSize(1rem);
+    }
+}
+.border-radius-20{
+    border-radius: 20px;
+}
+.border-radius-4{
+    border-radius: 4px;
+}
