@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>HTML Layout</title>
 </head>
 
-<body>
-    <div class="content">
-        <header>
+<body class="body body--m-0 body--p-0 body--d-flex body--justify-content-center body--align-center body--min-h-100">
+    <div class="container container--w-60 container--h-60vh">
+        <header class="container__header container__header--bg-gray container__header--text-center container__header--box-sizing-border-box container__header--color-white container__header--h-20 container__header--justify-content-center container__header--align-center container__header--d-flex">
             <h1>Cities</h1>
         </header>
-        <div class="content-body">
-            <nav>
-                <ul>
+        <div class="container__body container__body--w-100 container__body--h-50 container__body--d-flex container__body--justify-content-between">
+            <nav class="container__body-nav container__body-nav--bg-gray container__body-nav--w-30">
+                <ul class="container__body-nav-link container__body-nav-link--m-0 container__body-nav-link--p-3vh container__body-nav-link--unstyle">
                     <li><a href="#">London</a></li>
                     <li><a href="#">Paris</a></li>
                     <li><a href="#">Tokyo</a></li>
                 </ul>
             </nav>
-            <div class="text">
-                <h2>London</h2>
+            <div class="container__body-text container__body-text--w-60 container__body-text--bg-white container__body-text--p-20px">
+                <h2 class="container__body-text--m-0 container__body-text--p-0">London</h2>
                 <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
                     metropolitan area of over 13 million inhabitants.</p>
                 <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
                     back to its founding by the Romans, who named it Londinium.</p>
             </div>
         </div>
-        <footer>
+        <footer class="container__footer container__footer--align-center container__footer--bg-gray container__footer--text-center container__footer--box-sizing-border-box container__footer--color-white container__footer--h-20 container__footer--justify-content-center container__footer--align-center container__footer--d-flex container__footer--p-1vh-0">
             <h1>Footer</h1>
         </footer>
     </div>

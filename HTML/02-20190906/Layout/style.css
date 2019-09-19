@@ -6,9 +6,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-h1{
+h1{/*Chua chuyen qua scss*/
     margin: 0;
-    padding: 0;
+    pad0ding: 0;
 }
 .content{
     width: 60%;
