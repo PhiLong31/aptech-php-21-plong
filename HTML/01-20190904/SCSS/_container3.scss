@@ -1,0 +1,118 @@
+@import "./container";
+$background-body: #141414;
+$background-card-hover: #1C1F22;
+.container{
+    &--bg-black-purple{
+        @include background-color($background-body);
+    }
+    &--overflow-hidden{
+        overflow: hidden;
+    }
+    &__head{
+        &--text-white{
+            color: white;
+        }
+        &--text-center{
+            text-align: center;
+        }
+        &--padding-2vh-0{
+            padding: 2vh 0;
+        }
+        &--m-0{
+            margin: 0;
+        }
+    }
+    &__body{
+        &--w-70{
+            width: 70%;
+        }
+        &--h-auto{
+            height: auto;
+        }
+        &--m-2vh-auto{
+            margin: 2vh auto;
+        }
+        &--padding-2vw{
+            padding: 2vw;
+        }
+        &--padding-l{
+            padding-left: 21vh;
+        }
+        &--box-sizing-border-box{
+            box-sizing: border-box;
+        }
+        &--position-relative{
+            position: relative;
+        }
+        &-card{
+            &--w-20{
+                width: 20%;
+            }
+            &--text-center{
+                text-align: center;
+            }
+            &--text-white{
+                color: white;
+            }
+            &--p-3vw-1vw{
+                padding: 3vw 1vw;
+            }
+            &--border-radius{
+                border-radius: 10%;
+            }
+            &--position-relative{
+                position: relative;
+            }
+            &--transition{
+                transition: 0.4s;
+            }
+            &--float-left{
+                float: left;
+            }
+            &--m-2vw-1vw{
+                margin: 2vw 1vw;
+            }
+            &--cursor-poin{
+                cursor: pointer;
+            }
+            &--font-size-2vh{
+                font-size: 2vh;
+            }
+            &:hover{
+                background: $background-card-hover;
+            }
+            &:hover > .icon{
+                background: linear-gradient(to right, #06BFFF, #2B74FF);
+            }
+            &-icon{
+                &--font-size-3vw{
+                    font-size: 3vw;
+                }
+                &--position-absolute{
+                    position: absolute;
+                }
+                &--top{
+                    top: -15%;
+                }
+                &--left-50{
+                    left: 50%;
+                }
+                &--transform{
+                    transform: translateX(-50%);
+                }
+                &--padding-2vh-3vh{
+                    padding: 2vh 3vh;
+                }
+                &--rounded-circle{
+                    border-radius: 50%;
+                }
+                &--bg{
+                    background: (62,62,62, .5);
+                }
+                &--transition{
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

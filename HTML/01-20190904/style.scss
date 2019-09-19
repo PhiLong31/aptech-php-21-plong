@@ -1,0 +1,16 @@
+@import "./SCSS/container1";
+@import "./SCSS/container2";
+@import "./SCSS/container3";
+@import "./SCSS/container4";
+@import "./SCSS/menu";
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+::-webkit-scrollbar{
+    width: 0;
+}

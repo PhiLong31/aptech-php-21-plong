@@ -3,153 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styleMain.css">
-    <link rel="stylesheet" href="./style/styleMenu.css">
-    <link rel="stylesheet" href="./style/styleBody1.css">
-    <link rel="stylesheet" href="./style/styleBody2.css">
-    <link rel="stylesheet" href="./style/styleBody3.css">
-    <link rel="stylesheet" href="./style/styleBody4.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <title> Curriculum Vitae</title>
 </head>
 <body>
-     <div class="body-1" id = "personal-infomation">
-        <div class="main">
-            <div class="head">
+    <div class="body body--width-100 body--height-100" id = "personal-infomation">
+        <div class="container container--width-100 container--height-95 container--bg-yellow container--border-radius-b-r">
+            <div class="container__head container__head--font-family container__head--padding-l"> <!--head-->
                 <h1>Ricker</h1>
             </div>
-            <div class="content">
-                <div class="left-content">
-                    <h2>Personal information</h2>
-                    <p>Creativity and the spirit of always wanting to learn are the things I care about most. With a passion for programming and love of technology, I hope I will succeed in the future.
+            <div class="container__body container__body--d-flex container__body--m-8-auto container__body--w-60 container__body--justify-content-between">
+                <div class="container__body-text container__body-text--height-auto container__body-text--w-30">
+                    <h2 class="container__body-text--font-size
+                    container__body-text--text-transform-up
+                    container__body-text--m-0
+                    container__body-text--mb-30
+                    container__body-text--color
+                    container__body-text--position-relative ">Personal information</h2>
+                    <p class="container__body-text--mb-30 container__body-text--w-100 container__body-text--color
+                    container__body-text--font-size-2vh">Creativity and the spirit of always wanting to learn are the things I care about most. With a passion for programming and love of technology, I hope I will succeed in the future.
                     </p>
-                        <a href="#summary">My Cv</a>
+                        <a href="#summary" class="container__body-text--text-decoration-none container__body-text--color-white container__body-text--btn-background
+                        container__body-text--text-transform-up container__body-text--text-decoration-none container__body-text--mb-30 container__body-text--cursor-poin container__body-text--transition container__body-text--font-size-1vw container__body-text--p-1vh-3vh container__body-text--btn-hover">My Cv</a>
                 </div>
-                <div class="right-content">
-                    <img src="./Images/CV.png" alt="">
+                <div class="container__body-image container__body-image--cursor-poin container__body-image--h-40
+                container__body-image--w-40 container__body-image--shadow">
+                    <img src="./Images/CV.png" alt="" class="container__body-image--w-100 container__body-image--transition">
                 </div> 
             </div>
         </div>
     </div>
-    <div class="body-2" id = "personal-preference">
-        <section>
-            <input class = "slider1" type="radio" name = "slider" checked = "checked">
-            <input class = "slider2" type="radio" name = "slider">
-            <input class = "slider3" type="radio" name = "slider">
-            <div class="slide-background">
-                <div class="background-1">
-                    <div class="text text1">
-                        <h1>Personal preference</h1>
-                        <h2>Listen to music</h2>
-                        <p>Music brings me closer to life, it not only helps me relax in times of fatigue but also an infinite source of inspiration, helping me to creatively handle work in a softer way.                        </p>
-                    </div>
-                </div>
-                <div class="background-2">
-                    <div class="text text2">
-                        <h2>Swimming</h2>
-                        <p>Swimming is one of my favorite sports. It helps me relax and exercise in the summer.</p>
-                    </div>
-                </div>
-                <div class="background-3">
-                    <div class="text text3">
-                        <h2>Teakwondo</h2>
-                        <p>Exercise is an indispensable thing for programmers. It helps me keep my body moving after hours sitting on the computer. Help me to train a solid spirit and a healthy body.</p>
-                    </div>   
+    <div class="container container--width container--height-100 container--bg-black container--align-items-f-end container--justify-content-center container--d-flex container--position-relative container--overflow-hidden" id = "personal-preference">
+        <input class = "container__radio container__radio--slider-check-1" type="radio" name = "slider" checked = "checked">
+        <input class = "container__radio  container__radio--slider-check-2" type="radio" name = "slider">
+        <input class = "container__radio  container__radio--slider-check-3" type="radio" name = "slider">
+        <div class="container__slide container__slide--position-absolute container__slide--top-0 container__slide--left-0 container__slide--transition container__slide--w-300 container__slide--h-100 container__slide--d-flex">
+            <div class="container__slide-1 container__slide-1--background-image">
+                <div class="container__slide-text container__slide-text--w-40 container__slide-text--h-auto container__slide-text--type1">
+                    <h1>Personal preference</h1>
+                    <h2>Listen to music</h2>
+                    <p>Music brings me closer to life, it not only helps me relax in times of fatigue but also an infinite source of inspiration, helping me to creatively handle work in a softer way.</p>
                 </div>
             </div>
-        </section>
+            <div class="container__slide-2 container__slide-2--background-image">
+                <div class="container__slide-text container__slide-text--w-40 container__slide-text--h-auto container__slide-text--type2">
+                        <h2>Swimming</h2>
+                        <p>Swimming is one of my favorite sports. It helps me relax and exercise in the summer.</p>
+                </div>
+            </div>
+            <div class="container__slide-3 container__slide-3--background-image">
+                <div class="container__slide-text container__slide-text--w-40 container__slide-text--h-auto container__slide-text--type3">
+                        <h2>Teakwondo</h2>
+                        <p>Exercise is an indispensable thing for programmers. It helps me keep my body moving after hours sitting on the computer. Help me to train a solid spirit and a healthy body.</p>
+                </div>
+            </div>   
+            </div>
+        </div>
     </div>
-    <div class="body-3" id = "personal-skill">
-        <h1>Personal Skill</h1> 
-        <div class="section">
-            <div class="content">
-                <i class="fab fa-java"></i>
+    <div class="container container--bg-black-purple container--overflow-hidden" id = "personal-skill">
+        <h1 class="container__head container__head--text-center container__head--text-white container__head--padding-2vh-0 container__head--m-0">Personal Skill</h1> 
+        <div class="container__body container__body--box-sizing-border-box container__body--w-70 container__body--h-auto container__body--m-2vh-auto container__body--padding-2vw container__body--padding-l container__body--position-relative">
+            <div class="container__body-card 
+            container__body-card--w-20
+            container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-java container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>Java</h2>
                 <span>Java is my favorite programming language. And i will choose it as my primary language</span>
             </div>
-            <div class="content">
-                <i class="fab fa-php"></i>
+            <div class="container__body-card 
+            container__body-card--w-20 container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-php container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>PHP</h2>
                 <span>In the world market in general and in VietNam in particular. PHP is one of the indispensable languages.</span>
             </div>
-            <div class="content">
-                <i class="fab fa-html5"></i>
+            <div class="container__body-card 
+            container__body-card--w-20 container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-html5 container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>HTML</h2>
                 <span>HTML is one of the languages needed to help develop a website or a web technology application.</span>
             </div>
-            <div class="content">
-                <i class="fab fa-css3-alt"></i>
+            <div class="container__body-card 
+            container__body-card--w-20 container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-css3-alt container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>CSS</h2>
                 <span>CSS and HTML are inseparably separate languages. So having skills in CSS is absolutely essential.</span>
             </div>
-            <div class="content">
-                <i class="fab fa-js-square"></i>
+            <div class="container__body-card 
+            container__body-card--w-20 container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-js-square container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>JavaScript</h2>
                 <span>JavaScript is one of the important trilogy in web programming. It helps programmers create user-friendly, flexible features.</span>
             </div>
-            <div class="content">
-                <i class="fab fa-bootstrap"></i>
+            <div class="container__body-card 
+            container__body-card--w-20 container__body-card--text-center container__body-card--text-white container__body-card--p-3vw-1vw container__body-card--border-radius container__body-card--position-relative container__body-card--transition container__body-card--float-left container__body-card--m-2vw-1vw container__body-card--cursor-poin container__body-card--font-size-2vh">
+                <i class="fab fa-bootstrap container__body-card-icon container__body-card-icon--font-size-3vw container__body-card-icon--position-absolute container__body-card-icon--top container__body-card-icon--left-50 container__body-card-icon--transform container__body-card-icon--padding-2vh-3vh container__body-card-icon--rounded-circle container__body-card-icon--bg container__body-card-icon--transition"></i>
                 <h2>Bootstrap</h2>
                 <span>Bootstrap support many utlities of developers, it is widely used and loved by people, one of the outstanding features of boostrap is responsive.</span>
             </div>
         </div>
     </div>
-    <div class="body-4" id = "summary">
-        <div class="mycv">
-            <div class="headerCV">
-                <div class="avatar">
-                    <img src="./Images/Avatar.jpg" alt="">
+    <div class="container container--w-100 container--height container--text-left container--m-1vh-0 container--box-sizing-border-box" id = "summary">
+        <div class="container__main container__main--w-50 container__main--h-auto container__main--m-0-auto container__main--border container__main--padding-2vh-7vh">
+            <div class="container__main-header
+            container__main-header--p-0 container__main-header--m-0 container__main-header--w-100 container__main-header--h-20vh container__main-header--m-0 container__main-header--d-flex">
+                <div class="container__main-header-avatar container__main-header-avatar--text-center container__main-header-avatar--w-20 container__main-header-avatar--h-100 container__main-header-avatar--box-sizing-border-box container__main-header-avatar--padding container__main-header-avatar--border container__main-header-avatar--rounded-circle">
+                    <img src="./Images/Avatar.jpg" class="img img--border img--box-sizing-border-box img--h-100 img--m-0 img--rounded-circle img--w-95" alt="">
                 </div>
-                <div class="content">
+                <div class="container__main-header-text container__main-header-text--w-79 container__main-header-text--h-100 container__main-header-text--box-sizing-border-box">
                     <h2>Nguyen Ma Phi Long</h2>
-                    <table>
+                    <table class="container__main-header-text-table container__main-header-text-table--m-0 container__main-header-text-table--w-90">
                         <tr>
-                            <td><i class="fas fa-calendar-alt"></i>07/09/2019</td>
-                            <td><i class="fas fa-user"></i>Male</td>
+                            <td><i class="fas fa-calendar-alt container__main-header-text-table-icon--pr-1vh"></i>07/09/2019</td>
+                            <td><i class="fas fa-user container__main-header-text-table-icon--pr-1vh"></i>Male</td>
                         </tr>
                         <tr>
-                            <td><i class="fas fa-phone-alt"></i>0372009257</td>
-                            <td><i class="fas fa-envelope-open-text"></i>philongvadung@gmail.com</td>
+                            <td><i class="fas fa-phone-alt container__main-header-text-table-icon--pr-1vh"></i>0372009257</td>
+                            <td><i class="fas fa-envelope-open-text container__main-header-text-table-icon--pr-1vh"></i>philongvadung@gmail.com</td>
                         </tr>
                         <tr>
-                            <td><i class="fas fa-map-marked-alt"></i>Da Nang, Viet Nam</td>
-                            <td><i class="fas fa-info-circle"></i>Long Ricker</td>
+                            <td><i class="fas fa-map-marked-alt container__main-header-text-table-icon--pr-1vh"></i>Da Nang, Viet Nam</td>
+                            <td><i class="fas fa-info-circle container__main-header-text-table-icon--pr-1vh"></i>Long Ricker</td>
                         </tr>
                     </table>
                 </div>
             </div>   
-            <div class="bodyCV">
-                <h2>Objective</h2>
-                <p>I am looking for a place to cultivate and promote the knowledge that I have. With the spirit and passion for technology, I look forward to learning more experience through practical programs and contributing a small part of my ideas to society and the environment.</p>
-                <h2>Education</h2>
-                <span>School of information and communication technology</span>
-                <h4>Academic Year: 2018.</h4>
-                <h2>Work experience</h2>
-                <table>
+            <div class="container__main-body container__main-body--mt-7vh">
+                <h2 class="container__main-body-text container__main-body-text--color-blue container__main-body-text--text-transform-up container__main-body-text--pb-1vh
+                container__main-body-text--border-bottom container__main-body-text--font-normal container__main-body-text--font-size-22">Objective</h2>
+                <p class="container__main-body-text--p-02px container__main-body-text--m-0">I am looking for a place to cultivate and promote the knowledge that I have. With the spirit and passion for technology, I look forward to learning more experience through practical programs and contributing a small part of my ideas to society and the environment.</p>
+                <h2 class="container__main-body-text container__main-body-text--color-blue container__main-body-text--text-transform-up container__main-body-text--pb-1vh
+                container__main-body-text--border-bottom container__main-body-text--font-normal container__main-body-text--font-size-22">Education</h2>
+                <span class="container__main-body-text--color-blue container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-0 container__main-body-text--font-size-20">School of information and communication technology</span>
+                <h4 class="container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-2px">Academic Year: 2018.</h4>
+                <h2 class="container__main-body-text container__main-body-text--color-blue container__main-body-text--text-transform-up container__main-body-text--pb-1vh
+                container__main-body-text--border-bottom container__main-body-text--font-normal container__main-body-text--font-size-22">Work experience</h2>
+                <table class="container__main-body-text--table">
                     <tr>
                         <td>
-                            <span>Project Firstly</span>
-                            <h4>10/2018-11/2018</h4>
+                            <span class="container__main-body-text--color-blue container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-0 container__main-body-text--font-size-20">Project Firstly</span>
+                            <h4 class="container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-2px">10/2018-11/2018</h4>
                         </td>
                         <td>
-                            <h3>Website to introduce the product game.</h3>
+                            <h3 class="container__main-body-text--m-0 container__main-body-text--p-0 container__main-body-text--font-size-20">Website to introduce the product game.</h3>
                         </td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <p>- Programming languages used: HTML, CSS, JavaScript, Bootstrap.</p>
-                            <p>- By helping people know more about the game, easily access and see more about the game genres.</p>
+                            <p class="container__main-body-text--p-02px container__main-body-text--m-0">- Programming languages used: HTML, CSS, JavaScript, Bootstrap.</p>
+                            <p class="container__main-body-text--p-02px container__main-body-text--m-0">- By helping people know more about the game, easily access and see more about the game genres.</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <span>Project Secondly</span>
-                            <h4>05/2019 - 06/2019</h4></td>
+                            <span class="container__main-body-text--color-blue container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-0 container__main-body-text--font-size-20">Project Secondly</span>
+                            <h4 class="container__main-body-text--font-normal container__main-body-text--m-0 container__main-body-text--p-2px">05/2019 - 06/2019</h4></td>
                         <td> 
-                            <h3>Game Caro / Game Flappy Bird.</h3>
-                            <p>- Programming languages used: Java.</p>
-                            <p>- To create games for entertainment and to follow a more beautiful gracphics.</p>
+                            <h3 class="container__main-body-text--m-0 container__main-body-text--p-0 container__main-body-text--font-size-20">Game Caro / Game Flappy Bird.</h3>
+                            <p class="container__main-body-text--p-02px container__main-body-text--m-0">- Programming languages used: Java.</p>
+                            <p class="container__main-body-text--p-02px container__main-body-text--m-0">- To create games for entertainment and to follow a more beautiful gracphics.</p>
                         </td>
                     </tr>
                     <tr>
@@ -160,54 +173,54 @@
                     </tr>
                 </table>
             </div> 
-            <div class="footerCV">
-                <div class="left">
-                    <h2>Skills</h2>
-                    <div class="content-skill">
-                        <h3>HTML</h3>
-                        <div class="process-bar">
-                            <div class="bar html"></div>
+            <div class="container__main-footer container__main-footer--d-flex container__main-footer--h-auto container__main-footer--w-100 container__main-footer--justify-content-between">
+                <div class="container__main-footer-left container__main-footer-left--w-40">
+                    <h2 class="container__main-footer--color-blue container__main-footer--text-transform-up container__main-footer--pb-1vh container__main-footer--border-bottom container__main-footer--font-normal container__main-footer--mb-1vh container__main-footer--font-size-22px">Skills</h2>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                        <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">HTML</h3>
+                        <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                            <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--html"></div>
                         </div>
                     </div>
-                    <div class="content-skill">
-                            <h3>CSS</h3>
-                            <div class="process-bar">
-                                <div class="bar css"></div>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                            <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">CSS</h3>
+                            <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                                <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--css"></div>
                             </div>
                     </div>
-                    <div class="content-skill">
-                            <h3>Java</h3>
-                            <div class="process-bar">
-                                <div class="bar java"></div>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                            <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">Java</h3>
+                            <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                                <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--java"></div>
                             </div>
                     </div> 
-                    <div class="content-skill">
-                            <h3>English</h3>
-                            <div class="process-bar">
-                                <div class="bar english"></div>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                            <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">English</h3>
+                            <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                                <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--english"></div>
                             </div>
                     </div>
-                    <div class="content-skill">
-                            <h3>PHP</h3>
-                            <div class="process-bar">
-                                <div class="bar php"></div>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                            <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">PHP</h3>
+                            <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                                <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--php"></div>
                             </div>
                     </div>
-                    <div class="content-skill">
-                            <h3>JavaScript</h3>
-                            <div class="process-bar">
-                                <div class="bar javasript"></div>
+                    <div class="container__main-footer-left-content container__main-footer-left-content--m-2vh-0">
+                            <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">JavaScript</h3>
+                            <div class="container__main-footer-left-content-bar container__main-footer-left-content-bar--w-100 container__main-footer-left-content-bar--h-10px container__main-footer-left-content-bar--m-0 container__main-footer-left-content-bar--p-0 container__main-footer-left-content-bar--bg-white-gray container__main-footer-left-content-bar--border-radius container__main-footer-left-content-bar--overflow-hidden">
+                                <div class="container__main-footer-left-content-bar-width-bar--bg-blue container__main-footer-left-content-bar-width-bar--border-radius container__main-footer-left-content-bar-width-bar--h-100 container__main-footer-left-content-bar-width-bar--javasript"></div>
                             </div>
                     </div>  
                 </div>
-                <div class="right">
-                    <h2>PREFERENCE</h2>
-                    <h3>-First: Listen to music</h3>
-                    <h3>-Second: Swimming</h3>
-                    <h3>-Third: Teakwondo</h3>
-                    <h3>-Fourth: Shuttlecock kicking</h3>
-                    <h2>AWARDS</h2>
-                    <h3>Awards of ETC at school</h3>
+                <div class="container__main-footer-right">
+                    <h2 class="container__main-footer--color-blue container__main-footer--text-transform-up container__main-footer--pb-1vh container__main-footer--border-bottom container__main-footer--font-normal container__main-footer--mb-1vh container__main-footer--font-size-22px">PREFERENCE</h2>
+                    <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">-First: Listen to music</h3>
+                    <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">-Second: Swimming</h3>
+                    <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">-Third: Teakwondo</h3>
+                    <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">-Fourth: Shuttlecock kicking</h3>
+                    <h2 class="container__main-footer--color-blue container__main-footer--text-transform-up container__main-footer--pb-1vh container__main-footer--border-bottom container__main-footer--font-normal container__main-footer--mb-1vh container__main-footer--font-size-22px">AWARDS</h2>
+                    <h3 class="container__main-footer--m-0 container__main-footer--p-02vh container__main-footer--font-normal">Awards of ETC at school</h3>
                 </div>
             </div>
         </div>

@@ -1,0 +1,127 @@
+@import "container";
+$background-body: #333;
+@mixin image($url) {
+    background: url('../Images/' + $url);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+body{
+    .container{
+        &--bg-black{
+            @include background-color($background-body);
+        }
+        &--justify-content-center{
+            justify-content: center;
+        }
+        &--align-items-f-end{
+            align-items: flex-end;
+        }
+        &--d-flex{
+            display: flex;
+        }
+        &--position-relative{
+            position: relative;
+        }
+        &--overflow-hidden{
+            overflow: hidden;
+        }
+        &__radio{  
+            margin-bottom: 10vh;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            &--slider-check{
+                &-1:checked ~ .container__slide{
+                    left: 0;
+                }
+                &-2:checked ~ .container__slide{
+                    left: -100%;
+                }
+                &-3:checked ~ .container__slide{
+                    left: -200%;
+                }
+            }
+        }
+        &__slide{
+            &--position-absolute{
+                position: absolute;
+            }
+            &--top-0{
+                top: 0;
+            }
+            &--left-0{
+                left: 0;
+            }
+            &--w-300{
+                width: 300%;
+            }
+            &--h-100{
+                height: 100%;
+            }
+            &--d-flex{
+                display: flex;
+            }
+            &--transition{
+                transition: 0.5s;
+            }
+            &-1{
+                &--background-image{
+                    @include image('jobs_body.jpg');
+                }
+            }
+            &-2{
+                &--background-image{
+                    @include image('swim.jpg');
+                }
+            }
+            &-3{
+                &--background-image{
+                    @include image('teakwondo.jpg');
+                }
+            }
+            &-text{
+                &--w-40{
+                    width: 40%;
+                }
+                &--h-auto{
+                    height: auto;
+                }
+                &--type1{
+                    position: absolute;
+                    left: 10vw;
+                    top: 8vw;
+                }
+                &--type2{
+                    position: absolute;
+                    right: 18vw;
+                    top: 27vw;
+                }
+                &--type3{
+                    position: absolute;
+                    top: 18vw;
+                    margin-left: 10vw;
+                }
+                h1{
+                    width: 20%; 
+                    color: #fff;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 4vw;
+                }
+                h2{
+                    color: #FFCF31;
+                    letter-spacing: 1px;
+                    font-size: 2vw;
+                }
+                p{
+                    width: 27%;
+                    color: #fff;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
+}
