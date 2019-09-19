@@ -1,0 +1,175 @@
+.body{
+    &--m-0{
+        margin: 0;
+    }
+    &--p-0{
+        padding: 0;
+    }
+    .container{
+        &--w-74{
+            width: 74%;
+        }
+        &--h-35vh{
+            height: 35vh;
+        }
+        &--m-0-auto{
+            margin: 0 auto;
+        }
+        &__header{
+            &--m-15px-0{
+                margin: 15px 0;
+            }
+            &--w-100{
+                width: 100%;
+            }
+            &--h-23{
+                height: 23%;
+            }
+            &--bg-yellow{
+                background: #FFC107;
+            }
+            &--d-flex{
+                display: flex;
+            }
+            &--justify-content-around{
+                justify-content: space-around;
+            }
+            &--align-center{
+                align-items: center;
+            }
+            &--p-0-15px{
+                padding:0 15px;
+            }
+            &--box-sizing-border-box{
+                box-sizing: border-box;
+            }
+            &-square{
+                &--bg-blue{
+                    background: #007BFF;
+                }
+                &--bg-green{
+                    background: #17A2B8;
+                }
+                &--w-64{
+                    width: 64%;
+                }
+                &--w-30{
+                    width: 30%;
+                }
+                &--h-50{
+                    height: 50%;
+                }
+                &--border{
+                    border: 1px solid white;
+                }
+            }
+        }
+        &__main{
+            &--m-15px-0{
+                margin: 15px 0;
+            }
+            &--w-100{
+                width: 100%;
+            }
+            &--h-50{
+                height: 50%;
+            }
+            &--bg-gray{
+                background: #6C757D;
+            }
+            &--d-flex{
+                display: flex;
+            }
+            &--justify-content-around{
+                justify-content: space-around;
+            }
+            &--align-items-center{
+                align-items: center;
+            }
+            &--p-0-30px{
+                padding: 0 30px
+            }
+            &--box-sizing-border-box{
+                box-sizing: border-box;
+            }
+            &-square{
+                &--w-23{
+                    width: 23%;
+                }
+                &--w-100{
+                    width: 100%;
+                }
+                &--w-30{
+                    width: 30%;
+                }
+                &--w-43{
+                        width: 43%;
+                }
+                &--h-75{
+                    height: 75%;
+                }
+                &--h-30{
+                    height: 30%;
+                }
+                &--h-16{
+                    height: 16%;
+                }
+                &--m-3vh-0{
+                    margin: 3vh 0;
+                }
+                &--bg-blue{
+                    background: #007BFF;
+                }
+                &--bg-transparent{
+                    background: transparent;
+                }
+                &--border{
+                    border: 1px solid white;
+                }
+                &--border-none{
+                    border: none;
+                }
+            }
+        }
+        &__footer{
+            &--m-15px-0{
+                margin: 15px 0;
+            }
+            &--w-100{
+                width: 100%;
+            }
+            &--h-10{
+                height: 10%;
+            }            
+            &--bg-blue{
+                background: #007BFF;
+            }
+            &--d-flex{
+                display: flex;
+            }
+            &--justify-content-around{
+                justify-content: space-around;
+            }
+            &--align-center{
+                align-items: center;
+            }
+            &--p-0-10px{
+                padding: 0 10px;
+            }
+            &--box-sizing-border-box{
+                box-sizing: border-box;
+            }
+            &-square{
+                &--w-30{
+                    width: 30%;
+                }
+                &--h-5{
+                    height: 5%;
+                }  
+                &--bg-white{
+                    background: white;
+                }
+            }
+        }
+    }
+}
