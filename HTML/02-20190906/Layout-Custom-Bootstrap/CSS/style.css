@@ -1,0 +1,20 @@
+.cont-header {
+  height: 8vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cont-main {
+  height: 17vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.h-15 {
+  height: 15%;
+}
+
+.h-35 {
+  height: 35%;
+}
+/*# sourceMappingURL=style.css.map */
