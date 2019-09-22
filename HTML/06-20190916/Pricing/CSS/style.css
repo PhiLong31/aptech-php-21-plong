@@ -1,0 +1,45 @@
+h5 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.w-45 {
+  width: 45%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-3 {
+  width: 15%;
+}
+
+.re-shadow {
+  -webkit-box-shadow: 0 2px 35px -4px rgba(0, 0, 0, 0.82) !important;
+          box-shadow: 0 2px 35px -4px rgba(0, 0, 0, 0.82) !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.pricing__title {
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+.pricing__text {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.btn-card {
+  font-size: 1.25rem;
+  margin: 1em auto;
+}
+/*# sourceMappingURL=style.css.map */
