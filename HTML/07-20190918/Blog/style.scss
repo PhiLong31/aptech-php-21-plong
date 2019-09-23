@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+}
+.rect{
+    width:100%;
+    height: 100vh;
+    &--gray{
+        background: #777777;
+    }
+}
+.rounded-circle{
+    background: #777777;
+}
+.size-text-slide{
+    font-size: 1.25rem;
+}
+.h-20{
+    height: 19vh;
+}
+.re-height{
+    height: 50vh;
+}
+.navbar{
+    z-index: 999;
+}
+.size-header{
+    font-size: 3rem;
+}
