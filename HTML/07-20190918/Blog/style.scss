@@ -1,0 +1,18 @@
+.font-google{
+    font-family: 'Playfair Display', serif;
+}
+.cursor{
+    cursor: pointer;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+.cusror-control{
+    cursor: pointer;
+    &:hover > .card-link{
+        text-decoration: underline;
+    }
+}
+.bg-f5{
+    background: #F5F5F5;
+}
