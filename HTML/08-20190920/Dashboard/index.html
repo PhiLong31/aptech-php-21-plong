@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+
+    <nav class="nav navbar bg-dark flex-md-nowrap fixed-top p-0">
+        <div class="navbar-brand text-white col-12 col-md-2 mr-0">
+            <h6 class="font-weight-normal py-2 m-0">Company name</h6>
+        </div>
+        <div class="nav-item d-flex w-100">
+            <form action="#" class="w-100 d-md-flex flex-md-nowrap">
+                <input type="text"
+                    class="form-control form-control-dark w-100 rounded-0 btn-outline-secondary text-light"
+                    placeholder="Search">
+                <a href="#" class="btn text-light-secondary text-nowrap px-md-3 py-md-1 py-0">Sign out</a>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-2 bg-light position-sticky border-right d-none d-md-block">
+                <ul class="nav d-block justify-content-center mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link active px-0" href="#"><i class="fa fa-home pr-2"></i>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i class="fa fa-file-o pr-2"></i>Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i
+                                class="fa fa-shopping-cart pr-2"></i>Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i class="fa fa-users pr-2"></i>Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i class="fa fa-signal pr-2"></i>Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i
+                                class="fa fa-envelope-open-o pr-2"></i>Intergrations</a>
+                    </li>
+                </ul>
+                <h6 class="w-100 d-flex">
+                    <span class="text-muted">SAVED Reports</span>
+                    <a href="#" class="text-muted ml-auto"><i class="fa fa-plus-circle"></i></a>
+                </h6>
+                <ul class="nav d-block justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i class="fa fa-file-text-o pr-2"></i>Current
+                            month</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"><i class="fa fa-file-text-o pr-2"></i>Last
+                            quarter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"> <i class="fa fa-file-text-o pr-2"></i>Social
+                            engagement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-0 text-secondary" href="#"> <i class="fa fa-file-text-o pr-2"></i>Year-end
+                            sale</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 mt-5 mt-md-0 col-md-10 p-3 px-4">
+                <div class="text-header flex-row d-md-flex flex-row align-items-center border-bottom pb-2">
+                    <h2>Dashboard</h2>
+                    <div class="btn-group ml-auto mr-1 float-left mb-md-0 mb-2">
+                        <button class="btn btn-outline-secondary btn-sm">Share</button>
+                        <button class="btn btn-outline-secondary btn-sm">Export</button>
+                    </div>
+                    <button class="btn btn-outline-secondary d-flex align-items-center justify-content-between pt-1"><i
+                            class="fa fa-calendar-o pr-1"></i>This week<i class="fa fa-caret-down pl-1"></i></button>
+                </div>
+                <div class="chart">
+                    <canvas id="myChart" height="125"></canvas>
+                </div>
+                <h2 class="border-bottom pb-2">Section title</h2>
+                <table class="table table-striped w-100">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Header</th>
+                            <th>Header</th>
+                            <th>Header</th>
+                            <th>Header</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1,002</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1,003</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                        <tr>
+                            <td>1,001</td>
+                            <td>Lorem</td>
+                            <td>ipsum</td>
+                            <td>dolor</td>
+                            <td>sit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        let canvas = document.getElementById('myChart').getContext('2d');
+
+        Chart.defaults.global.elements.line.tension = 0;
+
+        let PopChart = new Chart(canvas, {
+            type: 'line',
+            data: {
+                labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                datasets: [{
+                    data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+                    borderWidth: 4,
+                    borderColor: '#007BFF',
+                    fill: false,
+                }]
+            },
+            options: {
+                legend: {
+                    display: false
+                },
+                layout: {
+                    padding: {
+                        top: 30,
+                        bottom: 20,
+                    }
+                }
+            }
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

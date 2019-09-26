@@ -1,0 +1,33 @@
+.form-control-dark {
+  border: none;
+  outline: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.form-control-dark:focus {
+  color: #495057 !important;
+  background: white !important;
+}
+
+.text-light-secondary {
+  color: rgba(255, 255, 255, 0.5) !important;
+  cursor: pointer;
+}
+
+.position-sticky {
+  top: 3rem;
+  height: calc(100vh - 50px) !important;
+}
+
+.btn {
+  height: 2rem;
+}
+
+th, td {
+  padding: 0.5rem !important;
+}
+/*# sourceMappingURL=style.css.map */
