@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="./favicon/bulb-curvy-flat.png" type="image/png">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,34 +18,26 @@
         <div class="row h-100">
             <div class="col h-100 d-flex flex-column justify-content-center align-items-center">
                 <h2 id = "title">Do you want turn on the light?</h2>
-                <img src="./images/lightOff.gif" alt="light-off" id="idLight">
+                <img src="./images/lightOff.gif" alt="light" id="idLight">
                 <button class="btn btn-outline-primary mt-4" id="idButton">Turn on</button>
             </div>
         </div>
     </div>
     <script>
-        document.getElementById('idButton').addEventListener("click", function () {
-            if (document.getElementById('idLight').src.indexof('On') > -1) {
-                openLight();
-            }
-            else {
-                closeLight();
-            }
+        $(document).ready(function(){
+            $('#idButton').click(function(){
+                if($('#idLight').attr("src").toLowerCase().indexOf('off') > -1){
+                    $('#idLight').attr("src", "./images/lightOn.gif");
+                    $('#title').text("Do you want turn off the light?");
+                    $('#idButton').text("Turn off");
+                }
+                else {
+                    $('#idLight').attr("src", "./images/lightOff.gif");
+                    $('#title').text("Do you want turn on the light?");
+                    $('#idButton').text("Turn on");
+                }
+            })
         })
-        function openLight() {
-            document.getElementById('idLight').src = "./images/lightOn.gif";
-            document.getElementById('idButton').innerHTML = "Turn off";
-            document.getElementById('idButton').classList.remove('btn-outline-primary');
-            document.getElementById('idButton').classList.add('btn-outline-secondary');
-            document.getElementById('title').innerText = "Do you want turn off the light?";
-        }
-        function closeLight() {
-            document.getElementById('idLight').src = "./images/lightOff.gif";
-            document.getElementById('idButton').innerHTML = "Turn on";
-            document.getElementById('idButton').classList.remove('btn-outline-secondary');
-            document.getElementById('idButton').classList.add('btn-outline-primary');
-            document.getElementById('title').innerText = "Do you want turn on the light?";
-        }
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
