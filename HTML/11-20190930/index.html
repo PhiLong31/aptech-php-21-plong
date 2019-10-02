@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Table add object</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <table class="table w-25 float-left table-striped" id = "table">
+        <tr>
+            <th id = "title">ID</th>
+            <th id = "title">Email</th>
+            <th id = "title">NumberPhone</th>
+            <th id = "title">Chi do</th>
+        </tr>
+    </table>
+    <button class="btn btn-outline-primary" id = 'button'>Create object</button>
+    <form action="#" id = 'form' class="w-50">
+        <input type="text" id = "id" name = "id" class="form-control" placeholder="Enter the id">
+        <input type="text" id = "email" name = "email" class="form-control" placeholder="Enter the email">
+        <input type="text" id = "numberPhone" name="numberPhone" class="form-control" placeholder="Enter the Number Phone">
+        <input type="text" id = "chiDo" name="chiDo" class="form-control" placeholder="Enter Chi Do">
+    </form>
+    <script>
+        document.getElementById('button').addEventListener('click',function(){
+            let id = document.getElementById('id');
+            let email = document.getElementById('email');
+            let numberPhone = document.getElementById('numberPhone');
+            let chiDo = document.getElementById('chiDo');
+            createDulieu(id.value,email.value, numberPhone.value, chiDo.value);
+            id.value = "";
+            email.value = "";
+            numberPhone.value = "";
+            chiDo.value = "";
+            console.log(id);
+        })
+        function createDulieu(id, email, numberPhone, chiDo){
+            let arr = [id,email,numberPhone,chiDo];
+            let title = Array.from(document.querySelectorAll('#title'));
+            console.log(title.length);
+            let table = document.getElementById('table');
+            var row = document.createElement('tr');
+            for(let index = 0; index <title.length; index++){
+                let col = document.createElement('td');
+                col.innerHTML = arr[index];
+                row.appendChild(col);
+                table.appendChild(row);
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
