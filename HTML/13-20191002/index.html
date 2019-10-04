@@ -35,7 +35,7 @@
         let Json_keys = Json_obj.users;
         for (let index = 0; index < Json_keys.length; index++) {
           // Lấy dữ liệu từ Object có trong users
-          let Arr_values = Object.values(Json_keys[index]);
+          let Arr_values = Object.values(Json_keys[Json_keys.length - index - 1]);
           // Đưa tới hàm tạo bảng dữ liệu bằng một chuỗi string tránh trường hợp thêm dữ liệu vào JSon
           createDataTable(Arr_values.join(','));
         }
@@ -55,7 +55,7 @@
             table.appendChild(row);
         }
     }
-  </script>
+  </script>     
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
