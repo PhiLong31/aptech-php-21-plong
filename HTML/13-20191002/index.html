@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <table class="table w-100 float-left table-striped" id="table">
+    <tr>
+      <th id="title">ID</th>
+      <th id="title">Name</th>
+      <th id="title">Email</th>
+      <th id="title">Password</th>
+      <th id="title">Created At</th>
+      <th id="title">Updated At</th>
+    </tr>
+  </table>
+
+  <script>
+    // Địa chỉ chưa dữ liệu thông qua Json
+    let url = "https://namcoi.com/aptech-demo/user-crud-laravel/public/api/users"; 
+    // Tạo đối tượng Ajax
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status == 200) {
+        // Convert lại từ chuỗi Json sang Json Object giống Integer.parseInt(...);
+        let Json_obj = JSON.parse(xhr.responseText); 
+        // Truy cập đối tượng users trong Json object
+        let Json_keys = Json_obj.users;
+        for (let index = 0; index < Json_keys.length; index++) {
+          // Lấy dữ liệu từ Object có trong users
+          let Arr_values = Object.values(Json_keys[index]);
+          // Đưa tới hàm tạo bảng dữ liệu bằng một chuỗi string tránh trường hợp thêm dữ liệu vào JSon
+          createDataTable(Arr_values.join(','));
+        }
+      }
+    }
+    xhr.open('GET', url, true);
+    xhr.send();
+    
+    function createDataTable(array){
+        let arr = array.split(',');
+        let table = document.getElementById('table');
+        var row = document.createElement('tr');
+        for(let index = 0; index <arr.length; index++){
+            let col = document.createElement('td');
+            col.innerHTML = arr[index];
+            row.appendChild(col);
+            table.appendChild(row);
+        }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
