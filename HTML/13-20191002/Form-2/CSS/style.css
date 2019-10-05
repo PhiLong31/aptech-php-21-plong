@@ -1,0 +1,31 @@
+.h-60 {
+  height: 50vh !important;
+}
+
+.h-30 {
+  height: 30vh !important;
+}
+
+.carousel-caption {
+  top: 50% !important;
+  left: 50% !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.rounded-circle {
+  width: 40% !important;
+  height: 75% !important;
+}
+
+@media (max-width: 768px) {
+  input[type='button'] {
+    width: 100% !important;
+  }
+  img[alt="First slide"] {
+    height: 70% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
