@@ -1,5 +1,5 @@
 .h-60 {
-  height: 50vh !important;
+  height: 60vh !important;
 }
 
 .h-30 {
@@ -13,6 +13,7 @@
   bottom: 0 !important;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 .rounded-circle {
@@ -26,6 +27,9 @@
   }
   img[alt="First slide"] {
     height: 70% !important;
+  }
+  .carousel-caption {
+    top: 35% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

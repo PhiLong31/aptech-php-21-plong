@@ -1,5 +1,5 @@
 .h-60{
-    height: 50vh !important;
+    height: 60vh !important;
 }
 .h-30{
     height: 30vh !important;
@@ -10,6 +10,7 @@
     right: 0 !important;
     bottom: 0 !important;
     transform: translate(-50%, -50%);
+    padding: 0;
 }
 .rounded-circle{
     width: 40% !important;
@@ -21,5 +22,8 @@
     }
     img[alt = "First slide"]{
         height: 70% !important;
+    }
+    .carousel-caption{
+        top: 35% !important;
     }
 }
