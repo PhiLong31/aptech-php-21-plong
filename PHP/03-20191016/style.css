@@ -1,0 +1,22 @@
+.form-sign-in{
+    position: absolute;
+    top:-100%;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.58);
+    transition: 0.7s ease-in-out;
+    z-index: -111;
+}
+.bg-white-opacity{
+    background: #f8f9fa24;
+}
+.bg-dark-opacity{
+    background: #343a4094!important;
+}
+.btn-out{
+    font-size: 1.25rem;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}

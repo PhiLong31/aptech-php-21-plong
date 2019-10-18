@@ -36,4 +36,13 @@ h1 {
 .rectangle {
   height: 14rem;
 }
+
+@media (max-width: 768px) {
+  .p-6-rem {
+    padding: 1rem 0;
+  }
+  .w-42-md {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
