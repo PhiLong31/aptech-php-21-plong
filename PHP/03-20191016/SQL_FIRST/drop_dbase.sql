@@ -1,0 +1,2 @@
+-- Drop my database with name my class in Aptech:
+-- drop database aptech_php_21;

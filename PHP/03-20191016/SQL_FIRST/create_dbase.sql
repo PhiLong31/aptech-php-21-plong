@@ -1,0 +1,2 @@
+-- Create database with my class in Aptech in mySQL by syntax:
+-- create database aptech_php_21;

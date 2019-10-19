@@ -1,0 +1,2 @@
+-- Drop my table in my database;
+-- drop table aptech_php_21.users;
