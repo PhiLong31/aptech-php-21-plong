@@ -19,6 +19,7 @@
 
         if(isset($_GET["submit"])){
             if(trim($_GET["last_name"] != "")){
+                // Check exist of user
                 $id = $_GET["id"];
                 $sql_check = "select * from $dbbase.$table where id = $id";
                 $result = $conn->query($sql_check);
@@ -26,11 +27,12 @@
                    echo "Create Failed";
                 }
                 else{
+                    // Create user if not exist
                     $last_name = $_GET["last_name"];
                     $first_name = $_GET["first_name"];
                     $address = $_GET["address"];
                     $city = $_GET["city"];
-                    $sql_create_user = "insert into $dbbase.$table values('$id', '$last_name', '$first_name', '$address', '$city');";
+                    $sql_create_user = "insert into `$dbbase`.`$table` (`last_name`, `first_name`, `address`, `city`) values('$last_name', '$first_name', '$address', '$city');";
                     $resultelse = $conn->query($sql_create_user);
                     if($resultelse) {
                         echo "<script type='text/javascript'>alert('Created users');</script>";
@@ -42,6 +44,7 @@
 
             }
             else{
+                // If don't values in form
                 $url = $_SERVER["PHP_SELF"];
                 header("Location: $url");
                 $message = "Khong de trong";
@@ -56,7 +59,6 @@
         <div class="container bg-white-opacity w-25 h-50 shadow">
             <form action="#" method="GET" class="flex-column align-items-center h-100 d-flex justify-content-center">
                 <h2 class="pb-4 text-white">Sign in</h2>
-                <input class="form-control mb-2 text-white bg-dark-opacity shadow" type="text" placeholder="ID" name = "id">
                 <input class="form-control mb-2 text-white bg-dark-opacity shadow" type="text" placeholder="Last name" name = "last_name">
                 <input class="form-control mb-2 text-white bg-dark-opacity shadow" type="text" placeholder="First name" name = "first_name">
                 <input class="form-control mb-2 text-white bg-dark-opacity shadow" type="text" placeholder="Address" name = "address">
@@ -69,9 +71,10 @@
         <table class="table table-striped">
             <thead>
                 <?php
+                    // Create column by database
                     if($columns_table->num_rows > 0){
                         while($row = $columns_table->fetch_assoc()){?>
-                            <th><?php echo ucfirst($row["COLUMN_NAME"]) ?></th>
+                            <th><?php echo str_replace("_", " ", ucfirst($row["COLUMN_NAME"])) ?></th>
                         <?php
                         }
                     }
@@ -79,6 +82,7 @@
             </thead>
             <tbody>
                 <?php
+                    // Input data to table
                     if($data_table->num_rows > 0){
                         while($row = $data_table->fetch_assoc()){?>
                             <tr>
