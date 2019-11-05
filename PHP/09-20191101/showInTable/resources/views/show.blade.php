@@ -13,21 +13,17 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                @for ($i = 0; $i < 6; $i++)
+                @for ($i = 0; $i < count($column); $i++)
                     <th>{{str_replace('_', ' ', ucfirst($column[$i]))}}</th>
                 @endfor
             </tr>
         </thead>
         <tbody>
-            @for ($i = 0; $i < 100; $i++)
+            @for ($i = 0; $i < $users->max('id'); $i++)
                 <tr>
-                    <?php $user = $users[$i]->toArray(); ?>
-                    <td>{{$user['id']}}</td>
-                    <td>{{$user['email']}}</td>
-                    <td>{{$user['password']}}</td>
-                    <td>{{$user['name']}}</td>
-                    <td>{{$user['created_at']}}</td>
-                    <td>{{$user['updated_at']}}</td>
+                    @foreach ($users[$i]->toArray() as $user)
+                        <td>{{$user}}</td>
+                    @endforeach
                 </tr>
             @endfor
         </tbody>
